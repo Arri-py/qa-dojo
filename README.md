@@ -44,7 +44,7 @@ calculator  | INFO:     Application startup complete.
 Открой документацию в браузере:
 
 ```
-http://localhost:8000/docs
+http://localhost:8088/docs
 ```
 
 Swagger UI покажет все эндпоинты — сгруппированные по версиям **v1** и **v2**.  
