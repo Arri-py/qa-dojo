@@ -20,17 +20,76 @@
 
 ---
 
-## Как приступить к кате
+## Как начать работу
+
+### Шаг 1 — Форкни репозиторий
+
+Нажми кнопку **Fork** в правом верхнем углу этой страницы.  
+GitHub создаст копию репозитория у тебя в аккаунте — это твоя личная площадка для работы.
+
+### Шаг 2 — Клонируй свой форк
 
 ```bash
-# Получить актуальное состояние репозитория
-git fetch
+git clone git@github.com:<твой-username>/qa-dojo.git
+cd qa-dojo
+```
 
-# Переключиться на нужную ветку
+### Шаг 3 — Добавь оригинальный репозиторий как upstream
+
+Это нужно, чтобы получать новые каты по мере их появления:
+
+```bash
+git remote add upstream git@github.com:Arri-py/qa-dojo.git
+```
+
+Проверь что всё настроено:
+
+```bash
+git remote -v
+# origin    git@github.com:<твой-username>/qa-dojo.git (fetch)
+# origin    git@github.com:<твой-username>/qa-dojo.git (push)
+# upstream  git@github.com:Arri-py/qa-dojo.git (fetch)
+# upstream  git@github.com:Arri-py/qa-dojo.git (push)
+```
+
+### Шаг 4 — Получи ветку с заданием
+
+```bash
+git fetch upstream
 git checkout kata/01-calculator
 ```
 
-Открой `README.md` в ветке — там полное описание задания.
+### Шаг 5 — Создай свою рабочую ветку
+
+Не работай прямо в ветке задания — создай свою:
+
+```bash
+git checkout -b kata/01-solution
+```
+
+### Шаг 6 — Делай задание и коммить
+
+```bash
+git add .
+git commit -m "kata/01: add client.py"
+git push origin kata/01-solution
+```
+
+### Шаг 7 — Открой Pull Request
+
+Зайди в свой форк на GitHub и нажми **Compare & pull request**.  
+Убедись что PR направлен из твоей ветки `kata/01-solution` в оригинальный репо.  
+Напиши что сделал, что было сложно, что непонятно — это и есть твоё задание на сдачу.
+
+### Как получать новые каты
+
+Когда появится новая ката — забери изменения из оригинального репо:
+
+```bash
+git fetch upstream
+git checkout kata/02-something
+git checkout -b kata/02-solution
+```
 
 ---
 
