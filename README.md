@@ -87,5 +87,3 @@ tests/test_calculator.py::test_health PASSED
 tests/test_calculator.py::test_operations PASSED
 ...
 ```
-
----
