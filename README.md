@@ -89,5 +89,3 @@ tests/test_calculator.py::test_operations PASSED
 ```
 
 ---
-
-*Доверяй, но проверяй. Удачи, ученик.*
