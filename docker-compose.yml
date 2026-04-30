@@ -1,0 +1,17 @@
+services:
+  calculator:
+    build: ./app
+    ports:
+      - "8088:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+
+  # TODO: опиши сервис db
+  #   - образ: postgres:16-alpine
+  #   - переменные окружения: POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD
+  #     (значения возьми из .env.example)
+  #   - подключи volume чтобы данные не терялись при перезапуске
+
+# TODO: объяви именованный volume для postgres
