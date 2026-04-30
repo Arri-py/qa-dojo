@@ -18,6 +18,7 @@
 |---|----------|-----------|-------|
 | 01 | Калькулятор-сан | Docker Compose, REST API, HTTP-методы, версионирование API, venv | `kata/01-calculator` |
 | 02 | Тест-сан | pytest, фикстуры, параметризация, API-тестирование | `kata/02-pytest` |
+| 03 | База данных-сан | PostgreSQL, multi-container Compose, volumes, переменные окружения | `kata/03-postgres` |
 
 ---
 
